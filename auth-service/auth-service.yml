@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: auth-service
+
+  datasource:
+    url: jdbc:postgresql://auth-db:5432/auth_db
+    username: auth_user
+    password: auth_pass
+
+jwt:
+  access-token-ttl-minutes: 15
+  refresh-token-ttl-days: 7
